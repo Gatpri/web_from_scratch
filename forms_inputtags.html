@@ -1,0 +1,138 @@
+<!-- First select and (alt+down/up) for changing position of whole blocks or div in once -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>This is HTML forms tutorial</h1>   
+
+<form action="backend.php">
+    <!-- This uses GET method by default but if we want to use POST method then we can simply write method="POST" in the form tag like this . . .  -->
+<div>
+FirstName: <input type="text" name="myfirstname">
+LastName: <input type="text" name="mylastname">
+</div>
+<br>
+
+<!-- Using <label for="FIRSTNAME">FirstName:</label> instead of FirstName: to link the label with the input field and also we can use (for) attribute to link the label with the input field and it should be same as the id of the input field like this . . . -->
+<div>
+    <label for="firstname">FirstName:</label>
+    <input type="text" name="myfirstname" id="firstname">
+    <label for="lastname">LastName:</label>
+    <input type="text" name="mylastname" id="lastname">
+</div>
+<br>
+
+
+<div>
+Email: <input type="email" name="myemail">
+</div>
+<br>
+
+<div>
+Email: <input type="email" name="myemail" placeholder="example@gmail.com">
+<!-- placeholder is used to show some text in the input field when it is empty and it will disappear when we start typing in the input field like this . . . -->
+</div>
+<br>
+
+<div>
+Password: <input type="password" name="mypassword">
+</div>
+<br>
+
+<div>
+    Date of Birth: <input type="date" name="mydob">
+</div>
+<br>
+
+<div>
+Are you eligible?:<input type="checkbox" name="mycheckbox">
+</div>
+<br>
+
+<div>
+    Are you eligible?:<input type="checkbox" name="mycheckbox" checked>
+    <!-- Eligible is already selected when the form opens. -->
+     <!-- Form may submit empty value ❌ -->
+</div>
+<br>
+
+<div>
+    Gender: Male<input type="radio" name="mygender" value="Male">
+    Female<input type="radio" name="mygender" value="Female">
+   Other<input type="radio" name="mygender" value="Other">
+    </div>
+<br>
+
+<div>
+    <label for="cars">Choose a car:</label>
+    <select name="mycars" id="cars">
+        <!-- for="cars" is used to link the label with the select element and should be same as the id of the select element tara select ko under ma aaucha options -->
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        <!-- when we click on the label then it will automatically focus on the select element and also we can use (option) to create options in the select element like this . . . -->
+    </select>
+</div>
+<br>
+
+<div>   
+    <label for="cars">Choose a car:</label>
+    <select name="mycars" id="cars" multiple size="2">
+        <!-- multiple is used to select multiple options ie if size="2" we can see 2 options in the select element and also we can use (option) to create options in the select element like this . . . -->
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        </select>
+</div>
+<br>
+
+<div>   
+    <label for="cars">Choose a car:</label>
+    <select name="mycars" id="cars">
+
+        <option value="volvo">Volvo</option>
+        <option value="saab" selected>Saab</option>
+               <!-- Saab is already selected when the form opens. -->
+
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        </select>
+</div>
+
+<div>
+Quantity: <input type="number" name="myquantity">
+<!-- This is just a number input field where we can only enter numbers and it also has some attributes like min and max which we can use to set the minimum and maximum value of the number input field like this . . . <input type="number" name="myquantity" min="1" max="10"> -->
+</div>
+<br>
+
+<div>
+    Amount: <input type="number" name="myamount" min="0" max="1000" step="10">
+    </div>
+    <br>
+
+    <div>
+        Feedback: <br>
+        <!-- (br)is used in this beacause we want The feedback option to be in the next line and also we can use (br) to create a new line in the textarea like this . . . -->
+
+        <textarea name="myfeedback" rows="4" cols="50"></textarea>
+        <!-- It provides a multi-line text input field where users can enter longer feedback or comments. The rows attribute specifies the number of visible text lines, while the cols attribute specifies the width of the textarea in characters. -->
+        </div>
+        <br>
+
+<div>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</div>
+
+
+</form> 
+
+
+</body>
+</html>
