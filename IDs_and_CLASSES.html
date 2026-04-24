@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- in HTML, IDs and classes are used to identify and style specific elements on a webpage. An ID is a unique identifier that can only be assigned to one element on a page, while a class can be assigned to multiple elements. IDs are typically used for elements that need to be targeted with JavaScript or CSS, while classes are used for styling groups of elements. When using CSS, you can target an element with an ID by using the "#" symbol followed by the ID name, while you can target elements with a class by using the "." symbol followed by the class name. It's important to use IDs and classes appropriately in your HTML code to ensure that your webpage is well-structured and easy to maintain. -->
+
+    <!-- ID example -->
+ <!-- Ids are unique identifiers that can only be assigned to one element on a page. They are typically used for elements that need to be targeted with JavaScript or CSS. To assign an ID to an element, you can use the "id" attribute in the HTML code. For example, you can assign an ID of "paragraph1" to a paragraph element like this:     -->
+    <p id="paragraph1">This is a paragraph with an ID of "paragraph1".</p>
+
+
+    <!-- Class example -->
+    <p class="paragraph">This is a paragraph with a class of "paragraph".</p>
+    <p class="paragraph">This is another paragraph with a class of "paragraph".</p> 
+    <!-- we can also use both ID and class on the same element like this . . . -->
+    <p id="paragraph2" class="paragraph">This is a paragraph with an ID of "paragraph2" and a class of "paragraph".</p> 
+    <!-- we can also use CSS to style elements with IDs and classes like this . . . -->
+    <style>
+        #paragraph1 {
+            color: red;
+        }
+        .paragraph {
+            color: blue;
+        }
+        
+    </style>
+    <!-- in this example, the first paragraph will be styled with red color because it has an ID of "paragraph1", while the second and third paragraphs will be styled with blue color because they have a class of "paragraph". The fourth paragraph will also be styled with blue color because it has a class of "paragraph", but it will not be styled with red color because it does not have an ID of "paragraph1". -->   
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ____________________________________________________________________________________________________________________ -->
+<!-- Emmets code  -->
+
+<!-- Using emmets properly we can also write the above code in a much shorter way like this . . . 
+    p#paragraph1+enter
+    p.paragraph+enter
+    p.paragraph+enter
+    p#paragraph2.paragraph+enter
+    -->
+
+
+
+
+
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+
+
+
+<!-- we can also use multiple classes on the same element like this . . .   -->
+<p class="red blue white">Hello World</p>
+<style>
+    .red {
+        color: red;
+    }
+    .blue {
+        background-color: lightblue;
+    }
+    .white {
+        padding: 50px;
+    }
+    </style>
+
+ <!--   👉 Output behavior:
+Text color → red
+Background → light blue
+ Padding → 10px -->
+
+ <!-- emmet code for the above code is . . . 
+    p.red.blue.white+enter -->
+
+
+</body>
+</html>
